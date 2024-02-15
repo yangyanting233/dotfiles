@@ -1,0 +1,9 @@
+{
+    "editor.renderWhitespace": "trailing",
+    "workbench.list.openMode": "doubleClick",
+    "workbench.tree.expandMode": "doubleClick",
+    "autopep8.args": [
+        "--ignore=E501"
+    ],
+    "markdown-preview-enhanced.mathRenderingOption": "MathJax",
+}
