@@ -41,5 +41,6 @@ command! TrimTrailingWhitespace call TrimTrailingWhitespace()
 fun! TrimFinalNewlines()
     let l:save = winsaveview()
     keeppatterns %s/\n\+\%$//e
+    call winrestview(l:save)
 endfun
 command! TrimFinalNewlines call TrimFinalNewlines()
