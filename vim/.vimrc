@@ -25,7 +25,8 @@ syntax on
 filetype plugin indent on
 
 # hight built-in group
-
+highlight Normal cterm=None ctermfg=None ctermbg=black ctermul=None
+highlight Visual cterm=reverse ctermfg=None ctermbg=None ctermul=None
 
 highlight TrailingWhitespace ctermbg=red
 call matchadd("TrailingWhitespace", '\s\+$')
