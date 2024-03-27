@@ -3,14 +3,22 @@ vim9script
 # lastmod: 2024-03-18
 # version: 0
 
+# enable filetype
+filetype plugin indent on
+
 # options
+set autoindent
+set autoread
 set expandtab
+set history=500
 set number
 set shiftwidth=4
 set showcmd
 set signcolumn=yes
 set softtabstop=4
 set tabstop=4
+set undodir=~/.vim/undo
+set undofile
 
 # status line
 set laststatus=2    # always show status line
@@ -22,10 +30,14 @@ set statusline+=%=  # separation between left and right aligned items
 set statusline+=tabstop=%{&tabstop}\ [%l/%L\ %3p%%,\ %c/%{strlen(getline('.'))}/%{&columns}]
 
 syntax on
-filetype plugin indent on
+set background=light
 
 # hight built-in group
+highlight Comment cterm=italic ctermfg=darkgray ctermbg=None ctermul=None
+highlight LineNr  cterm=None ctermfg=darkgray ctermbg=None ctermul=None
 highlight Normal cterm=None ctermfg=None ctermbg=black ctermul=None
+highlight SignColumn cterm=None ctermfg=None ctermbg=None ctermul=None
+highlight SpecialKey  cterm=None ctermfg=darkgray ctermbg=None ctermul=None
 highlight Visual cterm=reverse ctermfg=None ctermbg=None ctermul=None
 
 highlight TrailingWhitespace ctermbg=red
